@@ -21,9 +21,10 @@ body {
 
 .imageContainer {
 	@include faq-container-column;
-	background-image: url("./images/bg-pattern-desktop.svg");
-	background-position: 109% 69%;
-	background-repeat: no-repeat;
+	background-image: url("./images/bg-pattern-desktop.svg"),
+		url("./images/illustration-woman-online-desktop.svg");
+	background-position: -576px -294px, -84px center;
+	background-repeat: no-repeat, no-repeat;
 }
 
 .cardDivider {

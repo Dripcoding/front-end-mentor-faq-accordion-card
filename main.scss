@@ -17,6 +17,21 @@ body {
 
 .faqContainer {
 	@include faq-container-column;
+	@include flex-column;
+	box-sizing: border-box;
+	padding-bottom: 83px;
+	padding-left: 87px;
+	padding-right: 95px;
+	padding-top: 65px;
+	width: 532px;
+
+	h1 {
+		font-family: $cardFontFamily;
+		font-size: $cardHeaderFontSize;
+		font-weight: $cardHeaderFontWeight;
+		font-style: $cardHeaderFontStyle;
+		line-height: $cardHeaderLineHeight;
+	}
 }
 
 .imageContainer {
@@ -26,6 +41,7 @@ body {
 		url("./images/illustration-woman-online-desktop.svg");
 	background-position: -93px 206px, -576px -294px, -84px 70px;
 	background-repeat: no-repeat, no-repeat, no-repeat;
+	flex-grow: 1;
 }
 
 .cardDivider {

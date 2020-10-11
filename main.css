@@ -32,6 +32,13 @@ body {
   padding-top: 65px;
   width: 532px;
 }
+.faqContainer .faqContainer__divider {
+  background-color: #e8e8ea;
+  height: 1px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  width: 100%;
+}
 .faqContainer h1 {
   font-family: "Kumbh Sans";
   font-size: 32px;
@@ -53,7 +60,6 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid black;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -100,7 +106,9 @@ body {
 .cardDivider {
   background-color: #e8e8ea;
   height: 1px;
-  width: 350px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

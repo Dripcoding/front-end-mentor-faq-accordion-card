@@ -33,6 +33,8 @@
 @mixin desktop-item-divider {
 	background-color: $cardDividerBgColor;
 	height: $cardDividerHeight;
+	margin-bottom: 16px;
+	margin-top: 16px;
 	width: $cardDividerWidth;
 }
 

@@ -25,6 +25,10 @@ body {
 	padding-top: 65px;
 	width: 532px;
 
+	.faqContainer__divider {
+		@include desktop-item-divider;
+	}
+
 	h1 {
 		font-family: $cardFontFamily;
 		font-size: $cardHeaderFontSize;
@@ -37,7 +41,6 @@ body {
 	.faqContainer__item--inactive {
 		@include desktop-inactive-item;
 		@include flex-row;
-		border: 1px solid black;
 		align-items: flex-start;
 		justify-content: space-between;
 

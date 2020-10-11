@@ -38,11 +38,13 @@
 
 // Desktop inactive faq item
 @mixin desktop-inactive-item {
-	color: $cardItemInactiveItemHeight;
-	font-size: $cardInactiveFontSize;
-	font-weight: $cardInactiveFontWeight;
-	line-height: $cardInactiveLineHeight;
-	height: $cardInactiveItemWHeight;
+	color: $cardInactiveItemFontColor;
+	font-family: $cardFontFamily;
+	font-size: $cardInactiveItemFontSize;
+	font-style: $cardFontStyle;
+	font-weight: $cardInactiveItemFontWeight;
+	line-height: $cardInactiveItemLineHeight;
+	height: $cardItemInactiveItemHeight;
 	width: $cardInactiveItemWidth;
 }
 

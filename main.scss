@@ -31,6 +31,21 @@ body {
 		font-weight: $cardHeaderFontWeight;
 		font-style: $cardHeaderFontStyle;
 		line-height: $cardHeaderLineHeight;
+		margin-bottom: 43px;
+	}
+
+	.faqContainer__item {
+		@include desktop-inactive-item;
+		@include flex-row;
+		border: 1px solid black;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.faqContainer__item__chevron {
+		padding-bottom: 24px;
+		padding-right: 16px;
+		padding-top: 6px;
 	}
 }
 

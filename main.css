@@ -57,6 +57,10 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
+.faqContainer .faqContainer__item :hover {
+  color: #f47b56;
+  cursor: pointer;
+}
 .faqContainer .faqContainer__item__chevron {
   padding-bottom: 24px;
   padding-right: 16px;

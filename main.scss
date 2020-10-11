@@ -40,6 +40,11 @@ body {
 		border: 1px solid black;
 		align-items: flex-start;
 		justify-content: space-between;
+
+		:hover {
+			color: $cardActiveItemHeaderHoverColor;
+			cursor: pointer;
+		}
 	}
 
 	.faqContainer__item__chevron {

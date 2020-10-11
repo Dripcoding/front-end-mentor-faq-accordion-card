@@ -66,6 +66,9 @@ body {
   padding-right: 16px;
   padding-top: 6px;
 }
+.faqContainer .faqContainer__item__answer {
+  display: none;
+}
 
 .imageContainer {
   height: 100%;

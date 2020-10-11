@@ -48,12 +48,20 @@
 	width: $cardInactiveItemWidth;
 }
 
-// Desktop active faq item
+// Desktop active faq item header
 @mixin desktop-active-item-header {
 	color: $cardActiveItemHeaderFontColor;
 	font-size: $cardActiveItemHeaderFontSize;
 	font-weight: $cardActiveItemHeaderFontWeight;
 	line-height: $cardActiveItemHeaderLineHeight;
+}
+
+// Desktop inactive faq item header
+@mixin desktop-inactive-item-header {
+	color: $cardInactiveItemHeaderFontColor;
+	font-size: $cardInactiveItemHeaderFontSize;
+	font-weight: $cardInactiveItemHeaderFontWeight;
+	line-height: $cardInactiveItemHeaderLineHeight;
 }
 
 // Desktop active faq text

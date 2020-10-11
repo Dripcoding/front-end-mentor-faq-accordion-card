@@ -34,7 +34,7 @@ body {
 		margin-bottom: 43px;
 	}
 
-	.faqContainer__item {
+	.faqContainer__item--inactive {
 		@include desktop-inactive-item;
 		@include flex-row;
 		border: 1px solid black;
@@ -47,13 +47,26 @@ body {
 		}
 	}
 
-	.faqContainer__item__chevron {
+	.faqContainer__item__header--active {
+		@include desktop-active-item-header;
+	}
+
+	.faqContainer__item__header--inactive {
+		@include desktop-inactive-item-header;
+	}
+
+	.faqContainer__item__chevron--inactive {
 		padding-bottom: 24px;
 		padding-right: 16px;
 		padding-top: 6px;
 	}
 
-	.faqContainer__item__answer {
+	.faqContainer__item__answer--active {
+		@include desktop-active-item-text;
+		display: block;
+	}
+
+	.faqContainer__item__answer--inactive {
 		display: none;
 	}
 }

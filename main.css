@@ -1,14 +1,35 @@
 body {
   background-image: linear-gradient(#b068e9, #6463e7);
-  height: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .cardContainer {
-  color: 920px;
-  font-family: 509px;
+  background-color: #fff;
+  font-family: "Kumbh Sans";
   font-style: normal;
-  height: 920px;
-  width: 509px;
+  height: 509px;
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.faqContainer {
+  width: 50%;
+  height: 100%;
+}
+
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  background-image: url("./images/bg-pattern-desktop.svg");
+  background-position: 109% 69%;
+  background-repeat: no-repeat;
 }
 
 .cardDivider {

@@ -1,12 +1,33 @@
 @use 'palette' as *;
 
+// flex box row
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+// flex box row
+@mixin flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 // faq container
 @mixin faq-card-container {
-	color: $cardHeight;
-	font-family: $cardWidth;
+	background-color: $cardBgColor;
+	font-family: $cardFontFamily;
 	font-style: $cardFontStyle;
 	height: $cardHeight;
 	width: $cardWidth;
+}
+
+@mixin faq-container-column {
+	width: 50%;
+	height: 100%;
 }
 
 // faq item divider

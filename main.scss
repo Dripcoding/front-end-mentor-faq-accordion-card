@@ -25,23 +25,23 @@ body {
 	padding-top: 65px;
 	width: 532px;
 
-	.faqContainer__divider {
-		@include desktop-item-divider;
-	}
-
 	h1 {
 		font-family: $cardFontFamily;
 		font-size: $cardHeaderFontSize;
 		font-weight: $cardHeaderFontWeight;
 		font-style: $cardHeaderFontStyle;
+		height: $cardHeaderHeight;
 		line-height: $cardHeaderLineHeight;
-		margin-bottom: 43px;
+		margin-bottom: $cardHeaderMarginBottom;
 	}
 
 	.faqContainer__item--inactive {
 		@include desktop-inactive-item;
 		@include flex-row;
-		align-items: flex-start;
+		align-items: center;
+		border-top: 1px solid #e8e8ea;
+		border-bottom: 1px solid #e8e8ea;
+		height: 52px;
 		justify-content: space-between;
 
 		:hover {
@@ -61,7 +61,7 @@ body {
 	.faqContainer__item__chevron--inactive {
 		padding-bottom: 24px;
 		padding-right: 16px;
-		padding-top: 6px;
+		padding-top: 24px;
 	}
 
 	.faqContainer__item__answer--active {
@@ -71,6 +71,10 @@ body {
 
 	.faqContainer__item__answer--inactive {
 		display: none;
+	}
+
+	div:first-of-type {
+		border-top: none;
 	}
 }
 
@@ -82,8 +86,4 @@ body {
 	background-position: -93px 206px, -576px -294px, -84px 70px;
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	flex-grow: 1;
-}
-
-.cardDivider {
-	@include desktop-item-divider;
 }

@@ -1,7 +1,7 @@
 // body
 $gradient: linear-gradient(180deg, #b06be9 0%, #6463e7 100%);
 
-// Desktop inactive general
+// Desktop card container
 $cardHeight: 920px;
 $cardWidth: 509px;
 $cardFontFamily: "Kumbh Sans";
@@ -21,13 +21,13 @@ $cardDividerBgColor: #e8e8ea;
 $cardDividerWidth: 350px;
 $cardDividerHeight: 1px;
 
-// Desktop active item header
+// Desktop active faq item header
 $cardActiveItemHeaderFontColor: #1e1f36;
 $cardActiveItemHeaderFontSize: 14px;
 $cardActiveItemHeaderFontWeight: bold;
 $cardActiveItemHeaderLineHeight: 14px;
 
-// Deskto active item text
+// Deskto active faq text
 $cardActiveItemTextFontColor: #787887;
 $cardActiveItemTextFontSize: 12px;
 $cardActiveItemTextFontWeight: normal;

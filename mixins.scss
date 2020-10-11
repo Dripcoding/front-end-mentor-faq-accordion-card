@@ -1,0 +1,43 @@
+@use 'palette';
+
+// faq container
+@mixin faq-card-container {
+	color: $cardHeight;
+	font-family: $cardWidth;
+	font-style: $cardFontStyle;
+	height: $cardHeight;
+	width: $cardWidth;
+}
+
+// faq item divider
+@mixin desktop-item-divider {
+	background-color: $cardDividerBgColor;
+	height: $cardDividerHeight;
+	width: $cardDividerWidth;
+}
+
+// Desktop inactive faq item
+@mixin desktop-inactive-item {
+	color: $cardItemInactiveItemHeight;
+	font-size: $cardInactiveFontSize;
+	font-weight: $cardInactiveFontWeight;
+	line-height: $cardInactiveLineHeight;
+	height: $cardInactiveItemWHeight;
+	width: $cardInactiveItemWidth;
+}
+
+// Desktop active faq item
+@mixin desktop-active-item-header {
+	color: $cardActiveItemHeaderFontColor;
+	font-size: $cardActiveItemHeaderFontSize;
+	font-weight: $cardActiveItemHeaderFontWeight;
+	line-height: $cardActiveItemHeaderLineHeight;
+}
+
+// Desktop active faq text
+@mixin desktop-active-item-text {
+	color: $cardActiveItemTextFontColor;
+	font-size: $cardActiveItemTextFontSize;
+	font-weight: $cardActiveItemTextFontWeight;
+	line-height: $cardActiveItemTextLineHeight;
+}

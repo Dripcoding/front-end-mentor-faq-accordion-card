@@ -1,0 +1,34 @@
+// body
+$gradient: linear-gradient(180deg, #b06be9 0%, #6463e7 100%);
+
+// Desktop inactive general
+$cardHeight: 920px;
+$cardWidth: 509px;
+$cardFontFamily: "Kumbh Sans";
+$cardFontStyle: normal;
+$cardHeaderFontColor: #1e1f36;
+
+// Desktop inactive faq item
+$cardItemInactiveItemHeight: 350px;
+$cardInactiveItemWidth: 35px;
+$cardInactiveItemFontColor: #4b4c5f;
+$cardInactiveItemFontSize: 14px;
+$cardInactiveItemFontWeight: normal;
+$cardInactiveItemLineHeight: 14px;
+
+// Desktop inactive divider
+$cardDividerBgColor: #e8e8ea;
+$cardDividerWidth: 350px;
+$cardDividerHeight: 1px;
+
+// Desktop active item header
+$cardActiveItemHeaderFontColor: #1e1f36;
+$cardActiveItemHeaderFontSize: 14px;
+$cardActiveItemHeaderFontWeight: bold;
+$cardActiveItemHeaderLineHeight: 14px;
+
+// Deskto active item text
+$cardActiveItemTextFontColor: #787887;
+$cardActiveItemTextFontSize: 12px;
+$cardActiveItemTextFontWeight: normal;
+$cardActiveItemTextLineHeight: 18px;

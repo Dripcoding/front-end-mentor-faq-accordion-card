@@ -1,6 +1,11 @@
 @use 'mixins' as *;
 @use 'palette' as *;
 
+body {
+	background-image: $gradient;
+	height: 100vw;
+}
+
 .cardContainer {
 	@include faq-card-container;
 }

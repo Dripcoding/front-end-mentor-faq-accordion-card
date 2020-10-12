@@ -97,7 +97,7 @@ body {
 
 .imageContainer {
   height: 100%;
-  background-image: url("./images/illustration-box-desktop.svg"), url("./images/bg-pattern-desktop.svg"), url("./images/illustration-woman-online-desktop.svg");
+  background-image: url("../assets/images/illustration-box-desktop.svg"), url("../assets/images/bg-pattern-desktop.svg"), url("../assets/images/illustration-woman-online-desktop.svg");
   background-position: -93px 206px, -576px -294px, -84px 70px;
   background-repeat: no-repeat, no-repeat, no-repeat;
   flex-grow: 1;

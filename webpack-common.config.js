@@ -35,6 +35,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html',
             title: 'FAQ Accordion Card',
+            favicon: './public/assets/images/favicon-32x32.png',
             scriptLoading: 'defer'
         }),
         new MiniCssExtractPlugin({

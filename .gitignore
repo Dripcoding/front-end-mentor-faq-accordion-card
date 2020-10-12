@@ -17,4 +17,6 @@
 # Avoid map files
 *.css.map
 
+dist
+node_modules
 .prettierignore

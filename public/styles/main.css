@@ -1,0 +1,106 @@
+body {
+  background-image: linear-gradient(#b068e9, #6463e7);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cardContainer {
+  background-color: #fff;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  height: 509px;
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.faqContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-bottom: 83px;
+  padding-left: 87px;
+  padding-right: 95px;
+  padding-top: 65px;
+  width: 532px;
+}
+.faqContainer h1 {
+  font-family: "Kumbh Sans";
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 43px;
+}
+.faqContainer .faqContainer__item {
+  color: #4b4c5f;
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 14px;
+  height: 35px;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: center;
+  border-top: 1px solid #e8e8ea;
+  border-bottom: 1px solid #e8e8ea;
+  height: 52px;
+  justify-content: space-between;
+}
+.faqContainer .faqContainer__item :hover {
+  color: #f47b56;
+  cursor: pointer;
+}
+.faqContainer .faqContainer__item__header--active {
+  color: #1e1f36;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.faqContainer .faqContainer__item__header {
+  color: #4b4c5f;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+}
+.faqContainer .faqContainer__item__chevron {
+  padding-bottom: 24px;
+  padding-right: 16px;
+  padding-top: 24px;
+}
+.faqContainer .faqContainer__item__answer--active {
+  color: #787887;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+  display: block;
+}
+.faqContainer .faqContainer__item__answer {
+  display: none;
+}
+.faqContainer div:first-of-type {
+  border-top: none;
+}
+
+.imageContainer {
+  height: 100%;
+  background-image: url("./images/illustration-box-desktop.svg"), url("./images/bg-pattern-desktop.svg"), url("./images/illustration-woman-online-desktop.svg");
+  background-position: -93px 206px, -576px -294px, -84px 70px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=main.css.map */

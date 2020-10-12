@@ -1,0 +1,45 @@
+// body
+$gradient: linear-gradient(#b068e9, #6463e7);
+
+// Desktop card container
+$cardBgColor: #fff;
+$cardHeight: 509px;
+$cardWidth: 920px;
+$cardFontFamily: "Kumbh Sans";
+$cardFontStyle: normal;
+$cardHeaderFontColor: #1e1f36;
+$cardHeaderFontWeight: bold;
+$cardHeaderFontSize: 32px;
+$cardHeaderFontStyle: normal;
+$cardHeaderHeight: 32px;
+$cardHeaderLineHeight: 32px;
+$cardHeaderMarginBottom: 43px;
+
+// Desktop inactive faq item
+$cardItemInactiveItemHeight: 35px;
+$cardInactiveItemWidth: 350px;
+$cardInactiveItemFontColor: #4b4c5f;
+$cardInactiveItemFontSize: 14px;
+$cardInactiveItemFontWeight: normal;
+$cardInactiveItemLineHeight: 14px;
+
+// Desktop active faq item header
+$cardActiveItemHeaderHoverColor: #f47b56;
+$cardActiveItemHeaderFontColor: #1e1f36;
+$cardActiveItemHeaderFontSize: 14px;
+$cardActiveItemHeaderFontWeight: bold;
+$cardActiveItemHeaderLineHeight: 14px;
+
+// Desktop inactive item header
+$cardInactiveItemHeaderFontColor: #4b4c5f;
+$cardInactiveItemHeaderFontFamily: "Kumbh Sans";
+$cardInactiveItemHeaderFontSize: 14px;
+$cardInactiveItemHeaderFontStyle: normal;
+$cardInactiveItemHeaderFontWeight: normal;
+$cardInactiveItemHeaderLineHeight: 14px;
+
+// Desktop active faq text
+$cardActiveItemTextFontColor: #787887;
+$cardActiveItemTextFontSize: 12px;
+$cardActiveItemTextFontWeight: normal;
+$cardActiveItemTextLineHeight: 18px;

@@ -17,6 +17,8 @@
 # Avoid map files
 *.css.map
 
+# other
 dist
 node_modules
 .prettierignore
+yarn-error.log

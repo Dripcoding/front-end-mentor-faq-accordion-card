@@ -1,5 +1,6 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -8,38 +9,14 @@ module.exports = {
         module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.scss|css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-            },
-            {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
-            },
-            {
-                test: /\.svg$/,
-                loader: 'svg-inline-loader',
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
                     {
-                        loader: 'file-loader',  
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: '/assets/images'
-                        }
-                    }
-                ],
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    {
-                        loader: 'file-loader',  
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: '/assets/fonts'
-                        }
+                        loader: 'url-loader', 
                     }
                 ],
             },
@@ -47,6 +24,11 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin({cleanStaleWebpackAssets: false}),
+        new CopyPlugin({
+            patterns: [
+              { from: './public/assets/', to: 'assets'},
+            ],
+        }),
         new HtmlWebpackPlugin({
             template: './public/index.html',
             scriptLoading: 'defer'

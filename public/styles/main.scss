@@ -58,8 +58,13 @@ body {
 		@include desktop-inactive-item-header;
 	}
 
+	.faqContainer__item__chevron--active {
+		transform: rotate(180deg);
+	}
+
 	.faqContainer__item__chevron {
 		padding-bottom: 24px;
+		padding-left: 16px;
 		padding-right: 16px;
 		padding-top: 24px;
 	}

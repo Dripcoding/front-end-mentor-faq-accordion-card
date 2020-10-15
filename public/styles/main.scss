@@ -35,6 +35,10 @@ body {
 		margin-bottom: $cardHeaderMarginBottom;
 	}
 
+	.faqContainer__item--active {
+		@include desktop-active-item;
+	}
+
 	.faqContainer__item {
 		@include desktop-inactive-item;
 		@include flex-row;
@@ -48,6 +52,10 @@ body {
 			color: $cardActiveItemHeaderHoverColor;
 			cursor: pointer;
 		}
+	}
+
+	.faqContainer__item__headerContainer {
+		@include desktop-item-header-container;
 	}
 
 	.faqContainer__item__header--active {
@@ -71,7 +79,7 @@ body {
 
 	.faqContainer__item__answer--active {
 		@include desktop-active-item-text;
-		display: block;
+		display: block !important;
 	}
 
 	.faqContainer__item__answer {

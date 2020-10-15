@@ -30,6 +30,13 @@
 	height: 100%;
 }
 
+// Deskto active faq item
+@mixin desktop-active-item {
+	flex-direction: column !important;
+	height: fit-content !important;
+	margin-bottom: 10px !important;
+}
+
 // Desktop inactive faq item
 @mixin desktop-inactive-item {
 	color: $cardInactiveItemFontColor;
@@ -40,6 +47,15 @@
 	line-height: $cardInactiveItemLineHeight;
 	height: $cardItemInactiveItemHeight;
 	width: $cardInactiveItemWidth;
+}
+
+// Desktop faq item header container
+@mixin desktop-item-header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
 // Desktop active faq item header

@@ -25,11 +25,11 @@ $cardInactiveItemFontWeight: normal;
 $cardInactiveItemLineHeight: 14px;
 
 // Desktop active faq item header
-$cardActiveItemHeaderHoverColor: #f47b56;
-$cardActiveItemHeaderFontColor: #1e1f36;
-$cardActiveItemHeaderFontSize: 14px;
-$cardActiveItemHeaderFontWeight: bold;
-$cardActiveItemHeaderLineHeight: 14px;
+$cardActiveItemHeaderHoverColor: #f47b56 !important;
+$cardActiveItemHeaderFontColor: #1e1f36 !important;
+$cardActiveItemHeaderFontSize: 14px !important;
+$cardActiveItemHeaderFontWeight: bold !important;
+$cardActiveItemHeaderLineHeight: 14px !important;
 
 // Desktop inactive item header
 $cardInactiveItemHeaderFontColor: #4b4c5f;

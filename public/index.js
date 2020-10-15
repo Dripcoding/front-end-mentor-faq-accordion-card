@@ -9,10 +9,16 @@
 import './styles/reset.scss'
 import './styles/main.scss'
 
-// ===== ADD CHEVRON ACTIVE STYLES =====
-const chevron = document.querySelectorAll('.faqContainer__item__chevron');
-chevron.forEach(c => {
-    c.addEventListener('click', () => {
-        c.classList.toggle("faqContainer__item__chevron--active")
+// ===== CARD ELEMENTS =====
+const faqItems = document.querySelectorAll('.faqContainer__item')
+const chevrons = document.querySelectorAll('.faqContainer__item__chevron');
+const faqItemHeaders = document.querySelectorAll('.faqContainer__item__header');
+
+// ===== TOGGLE ACTIVE MODIFIERS =====
+for (let i = 0; i < faqItems.length; i++) {
+    // listen for clicks on items
+    faqItems[i].addEventListener('click', () => {
+        chevrons[i].classList.toggle("faqContainer__item__chevron--active")
+        faqItemHeaders[i].classList.toggle("faqContainer__item__header--active")
     })
-});
+}

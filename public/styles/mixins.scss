@@ -19,6 +19,7 @@
 // faq container
 @mixin faq-card-container {
 	background-color: $cardBgColor;
+	border-radius: $cardBorderRadius;
 	font-family: $cardFontFamily;
 	font-style: $cardFontStyle;
 	height: $cardHeight;

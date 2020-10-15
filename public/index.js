@@ -8,3 +8,11 @@
 // styles
 import './styles/reset.scss'
 import './styles/main.scss'
+
+// ===== ADD CHEVRON ACTIVE STYLES =====
+const chevron = document.querySelectorAll('.faqContainer__item__chevron');
+chevron.forEach(c => {
+    c.addEventListener('click', () => {
+        c.classList.toggle("faqContainer__item__chevron--active")
+    })
+});

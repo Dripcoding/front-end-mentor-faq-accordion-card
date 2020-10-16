@@ -13,12 +13,16 @@ body {
 .cardContainer {
 	@include faq-card-container;
 	@include flex-row;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .faqContainer {
 	@include faq-container-column;
 	@include flex-column;
 	box-sizing: border-box;
+	margin-right: -50px;
+	overflow-y: auto;
 	padding-bottom: 83px;
 	padding-left: 87px;
 	padding-right: 95px;
@@ -43,7 +47,6 @@ body {
 		@include desktop-inactive-item;
 		@include flex-row;
 		align-items: center;
-		border-top: 1px solid #e8e8ea;
 		border-bottom: 1px solid #e8e8ea;
 		height: 52px;
 		justify-content: space-between;

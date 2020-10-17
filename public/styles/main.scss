@@ -83,6 +83,7 @@ body {
 	.faqContainer__item__answer--active {
 		@include desktop-active-item-text;
 		display: block !important;
+		align-self: flex-start !important;
 	}
 
 	.faqContainer__item__answer {

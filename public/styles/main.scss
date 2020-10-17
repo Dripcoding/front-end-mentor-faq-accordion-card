@@ -15,6 +15,16 @@ body {
 	@include flex-row;
 	overflow-x: hidden;
 	overflow-y: hidden;
+
+	@media screen and (max-width: 950px) {
+		width: 875px;
+	}
+
+	@media screen and (max-width: 900px) {
+		@include flex-column;
+		max-width: 327px;
+		max-height: 643px;
+	}
 }
 
 .faqContainer {
@@ -37,6 +47,10 @@ body {
 		height: $cardHeaderHeight;
 		line-height: $cardHeaderLineHeight;
 		margin-bottom: $cardHeaderMarginBottom;
+
+		@media screen and (max-width: 900px) {
+			align-self: center;
+		}
 	}
 
 	.faqContainer__item--active {
@@ -55,6 +69,11 @@ body {
 			color: $cardActiveItemHeaderHoverColor;
 			cursor: pointer;
 		}
+
+		@media screen and (max-width: 900px) {
+			width: 100%;
+			font-size: 13px;
+		}
 	}
 
 	.faqContainer__item__headerContainer {
@@ -67,6 +86,10 @@ body {
 
 	.faqContainer__item__header {
 		@include desktop-inactive-item-header;
+
+		@media screen and (max-width: 900px) {
+			font-size: 13px;
+		}
 	}
 
 	.faqContainer__item__chevron--active {
@@ -78,6 +101,10 @@ body {
 		padding-left: 16px;
 		padding-right: 16px;
 		padding-top: 24px;
+
+		@media screen and (max-width: 900px) {
+			padding-right: 0;
+		}
 	}
 
 	.faqContainer__item__answer--active {
@@ -92,6 +119,13 @@ body {
 
 	div:first-of-type {
 		border-top: none;
+	}
+
+	@media screen and (max-width: 900px) {
+		margin: 132px 24px 48px 24px;
+		max-width: 279px;
+		max-height: 355px;
+		padding: 0;
 	}
 }
 

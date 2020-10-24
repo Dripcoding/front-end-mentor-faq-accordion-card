@@ -13,8 +13,8 @@ body {
 .cardContainer {
 	@include faq-card-container;
 	@include flex-row;
-	overflow-x: hidden;
-	overflow-y: hidden;
+
+	position: relative;
 
 	@media screen and (max-width: 950px) {
 		width: 875px;
@@ -31,13 +31,11 @@ body {
 	@include faq-container-column;
 	@include flex-column;
 	box-sizing: border-box;
-	margin-right: -50px;
-	overflow-y: auto;
 	padding-bottom: 83px;
 	padding-left: 87px;
 	padding-right: 95px;
 	padding-top: 65px;
-	width: 532px;
+	width: 50%;
 
 	h1 {
 		font-family: $cardFontFamily;
@@ -129,12 +127,42 @@ body {
 	}
 }
 
-.imageContainer {
+.cardContainer__imageContainerOne {
+	display: block;
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+	left: -91px;
+	margin-top: -40px;
+}
+
+.cardContainer__imageContainerTwo {
 	@include faq-container-column;
-	background-image: url("../assets/images/illustration-box-desktop.svg"),
-		url("../assets/images/bg-pattern-desktop.svg"),
-		url("../assets/images/illustration-woman-online-desktop.svg");
-	background-position: -93px 206px, -576px -294px, -84px 70px;
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	flex-grow: 1;
+	background-image: url("../assets/images/bg-pattern-desktop.svg");
+	background-position: -577px center;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: inherit;
+	position: relative;
+	width: 50%;
+	flex: 1.2;
+	overflow: hidden;
+
+	picture {
+		position: absolute;
+		top: 80px;
+		left: -86px;
+	}
+
+	.imageContainer__bgPatternDesktop {
+		position: absolute;
+	}
+
+	.imageContainer__boxDesktop {
+		position: absolute;
+	}
+
+	.imageContainer__womanOnline {
+		position: absolute;
+	}
 }

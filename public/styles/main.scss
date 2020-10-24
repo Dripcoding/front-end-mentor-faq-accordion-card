@@ -28,7 +28,7 @@ body {
 .cardContainer {
 	@include faq-card-container;
 	@include flex-row;
-	font-family: "KumbhSans-Regular";
+	font-family: "Kumbh Sans";
 
 	@media screen and (max-width: 1100px) {
 		@include flex-column;
@@ -65,7 +65,6 @@ body {
 
 		h1 {
 			@include faq-card-container-header;
-			font-family: "KumbhSans-Bold";
 
 			@media screen and (max-width: 1100px) {
 				align-self: center;
@@ -100,15 +99,12 @@ body {
 
 		.faqContainer__item__header--active {
 			@include desktop-active-item-header;
-			font-family: "KumbhSans-Bold";
-			font-weight: 700;
 			font-size: 14px;
 			line-height: 14px;
 		}
 
 		.faqContainer__item__header {
 			@include desktop-inactive-item-header;
-			font-family: "KumbhSans-Regular";
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 14px;
@@ -143,7 +139,7 @@ body {
 
 		.faqContainer__item__answer {
 			display: none;
-			font-family: "KumbhSans-Regular";
+			// font-family: "KumbhSans-Regular";
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;

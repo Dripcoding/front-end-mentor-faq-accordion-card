@@ -13,13 +13,21 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(png|svg|jpg|gif|ttf)$/,
                 use: [
                     {
                         loader: 'url-loader', 
                     }
                 ],
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ],
+            }
         ]
     },
     plugins: [

@@ -1,6 +1,21 @@
 @use 'mixins' as *;
 @use 'palette' as *;
 
+@font-face {
+	font-family: "KumbhSans-Bold";
+	src: url("../assets/fonts/KumbhSans-Bold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "KumbhSans-Light";
+	src: url("../assets/fonts/KumbhSans-Light.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "KumbhSans-Regular";
+	src: url("../assets/fonts/KumbhSans-Regular.ttf") format("ttf");
+}
+
 body {
 	background-image: $gradient;
 	display: flex;
@@ -13,6 +28,7 @@ body {
 .cardContainer {
 	@include faq-card-container;
 	@include flex-row;
+	font-family: "KumbhSans-Regular";
 
 	@media screen and (max-width: 1100px) {
 		@include flex-column;
@@ -49,6 +65,7 @@ body {
 
 		h1 {
 			@include faq-card-container-header;
+			font-family: "KumbhSans-Bold";
 
 			@media screen and (max-width: 1100px) {
 				align-self: center;
@@ -83,10 +100,18 @@ body {
 
 		.faqContainer__item__header--active {
 			@include desktop-active-item-header;
+			font-family: "KumbhSans-Bold";
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 14px;
 		}
 
 		.faqContainer__item__header {
 			@include desktop-inactive-item-header;
+			font-family: "KumbhSans-Regular";
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 14px;
 
 			&:hover {
 				color: $cardActiveItemHeaderHoverColor;
@@ -118,6 +143,10 @@ body {
 
 		.faqContainer__item__answer {
 			display: none;
+			font-family: "KumbhSans-Regular";
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
 		}
 
 		div:first-of-type {

@@ -176,7 +176,7 @@ body {
 	}
 
 	.cardContainer__imageContainerTwo {
-		@include image-container-two;
+		@include faq-container-column;
 
 		picture {
 			position: absolute;

@@ -18,10 +18,6 @@ body {
 	background-repeat: no-repeat;
 	position: relative;
 
-	@media screen and (max-width: 950px) {
-		width: 875px;
-	}
-
 	@media screen and (max-width: 1100px) {
 		@include flex-column;
 		background-image: url("../assets/images/bg-pattern-mobile.svg");
@@ -31,165 +27,204 @@ body {
 		min-height: 535px;
 		width: 327px;
 	}
-}
 
-.faqContainer {
-	@include faq-container-column;
-	@include flex-column;
-	box-sizing: border-box;
-	padding-bottom: 83px;
-	padding-left: 87px;
-	padding-right: 95px;
-	padding-top: 65px;
-	width: 50%;
+	@media screen and (max-width: 450px) and (max-height: 768px) {
+		margin-top: 100px;
+	}
 
-	h1 {
-		font-family: $cardFontFamily;
-		font-size: $cardHeaderFontSize;
-		font-weight: $cardHeaderFontWeight;
-		font-style: $cardHeaderFontStyle;
-		height: $cardHeaderHeight;
-		line-height: $cardHeaderLineHeight;
-		margin-bottom: $cardHeaderMarginBottom;
+	@media screen and (max-width: 400px) and (max-height: 768px) {
+		margin-top: 150px;
+	}
+
+	@media screen and (max-width: 400px) {
+		margin-bottom: 50px;
+		min-height: 400px;
+	}
+
+	@media screen and (max-width: 350px) {
+		margin-top: 200px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.faqContainer {
+		@include faq-container-column;
+		@include flex-column;
+		box-sizing: border-box;
+		padding-bottom: 83px;
+		padding-left: 87px;
+		padding-right: 95px;
+		padding-top: 65px;
+		width: 50%;
+
+		h1 {
+			font-family: $cardFontFamily;
+			font-size: $cardHeaderFontSize;
+			font-weight: $cardHeaderFontWeight;
+			font-style: $cardHeaderFontStyle;
+			height: $cardHeaderHeight;
+			line-height: $cardHeaderLineHeight;
+			margin-bottom: $cardHeaderMarginBottom;
+
+			@media screen and (max-width: 1100px) {
+				align-self: center;
+			}
+
+			@media screen and (max-height: 768px) {
+				margin-bottom: 10px;
+			}
+
+			@media screen and (max-width: 350px) {
+				margin-bottom: 0;
+			}
+		}
+
+		.faqContainer__item--active {
+			@include desktop-active-item;
+		}
+
+		.faqContainer__item {
+			@include desktop-inactive-item;
+			@include flex-row;
+			align-items: center;
+			border-bottom: 1px solid #e8e8ea;
+			height: 52px;
+			justify-content: space-between;
+
+			@media screen and (max-width: 1100px) {
+				width: 100%;
+				font-size: 13px;
+			}
+		}
+
+		.faqContainer__item__headerContainer {
+			@include desktop-item-header-container;
+		}
+
+		.faqContainer__item__header--active {
+			@include desktop-active-item-header;
+		}
+
+		.faqContainer__item__header {
+			@include desktop-inactive-item-header;
+
+			&:hover {
+				color: $cardActiveItemHeaderHoverColor;
+				cursor: pointer;
+			}
+
+			@media screen and (max-width: 1100px) {
+				font-size: 13px;
+			}
+		}
+
+		.faqContainer__item__chevron--active {
+			transform: rotate(180deg);
+		}
+
+		.faqContainer__item__chevron {
+			padding-bottom: 24px;
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 24px;
+
+			@media screen and (max-width: 1100px) {
+				padding-right: 0;
+			}
+		}
+
+		.faqContainer__item__answer--active {
+			@include desktop-active-item-text;
+			display: block !important;
+			align-self: flex-start !important;
+		}
+
+		.faqContainer__item__answer {
+			display: none;
+		}
+
+		div:first-of-type {
+			border-top: none;
+		}
 
 		@media screen and (max-width: 1100px) {
-			align-self: center;
+			padding: 0;
+			width: 100%;
+			min-height: 355px;
+			width: 279px;
+			margin-bottom: 48px;
+			box-sizing: border-box;
+		}
+
+		@media screen and (max-width: 400px) {
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: 350px) {
+			margin-bottom: 0;
 		}
 	}
 
-	.faqContainer__item--active {
-		@include desktop-active-item;
+	.cardContainer__imageContainerOne {
+		display: block;
+		position: absolute;
+		top: 50%;
+		z-index: 3;
+		left: -91px;
+		margin-top: -40px;
+
+		@media screen and (max-width: 1100px) {
+			display: none;
+		}
 	}
 
-	.faqContainer__item {
-		@include desktop-inactive-item;
-		@include flex-row;
-		align-items: center;
-		border-bottom: 1px solid #e8e8ea;
-		height: 52px;
-		justify-content: space-between;
+	.cardContainer__imageContainerTwo {
+		@include faq-container-column;
+		width: 100%;
+		min-height: inherit;
+		position: relative;
+		width: 50%;
+		flex: 1.2;
+		overflow: hidden;
+
+		picture {
+			position: absolute;
+			top: 82px;
+			left: -82px;
+
+			@media screen and (max-width: 1100px) {
+				height: 180px;
+				top: -108px;
+				left: 20px;
+				z-index: 100;
+			}
+
+			@media screen and (max-width: 350px) {
+				left: 10px;
+			}
+		}
+
+		.imageContainer__bgPatternDesktop {
+			position: absolute;
+		}
+
+		.imageContainer__boxDesktop {
+			position: absolute;
+		}
+
+		.imageContainer__womanOnline {
+			position: absolute;
+
+			@media screen and (max-width: 1100px) {
+				height: 196px;
+				width: 256px;
+			}
+		}
 
 		@media screen and (max-width: 1100px) {
 			width: 100%;
-			font-size: 13px;
+			min-height: 130px;
+			overflow: visible;
 		}
-	}
-
-	.faqContainer__item__headerContainer {
-		@include desktop-item-header-container;
-	}
-
-	.faqContainer__item__header--active {
-		@include desktop-active-item-header;
-	}
-
-	.faqContainer__item__header {
-		@include desktop-inactive-item-header;
-
-		&:hover {
-			color: $cardActiveItemHeaderHoverColor;
-			cursor: pointer;
-		}
-
-		@media screen and (max-width: 1100px) {
-			font-size: 13px;
-		}
-	}
-
-	.faqContainer__item__chevron--active {
-		transform: rotate(180deg);
-	}
-
-	.faqContainer__item__chevron {
-		padding-bottom: 24px;
-		padding-left: 16px;
-		padding-right: 16px;
-		padding-top: 24px;
-
-		@media screen and (max-width: 1100px) {
-			padding-right: 0;
-		}
-	}
-
-	.faqContainer__item__answer--active {
-		@include desktop-active-item-text;
-		display: block !important;
-		align-self: flex-start !important;
-	}
-
-	.faqContainer__item__answer {
-		display: none;
-	}
-
-	div:first-of-type {
-		border-top: none;
-	}
-
-	@media screen and (max-width: 1100px) {
-		padding: 0;
-		width: 100%;
-		min-height: 355px;
-		width: 279px;
-		margin-bottom: 48px;
-		box-sizing: border-box;
-	}
-}
-
-.cardContainer__imageContainerOne {
-	display: block;
-	position: absolute;
-	top: 50%;
-	z-index: 3;
-	left: -91px;
-	margin-top: -40px;
-
-	@media screen and (max-width: 1100px) {
-		display: none;
-	}
-}
-
-.cardContainer__imageContainerTwo {
-	@include faq-container-column;
-	width: 100%;
-	min-height: inherit;
-	position: relative;
-	width: 50%;
-	flex: 1.2;
-	overflow: hidden;
-
-	picture {
-		position: absolute;
-		top: 82px;
-		left: -82px;
-
-		@media screen and (max-width: 1100px) {
-			height: 180px;
-			top: -108px;
-			left: 20px;
-			z-index: 100;
-		}
-	}
-
-	.imageContainer__bgPatternDesktop {
-		position: absolute;
-	}
-
-	.imageContainer__boxDesktop {
-		position: absolute;
-	}
-
-	.imageContainer__womanOnline {
-		position: absolute;
-
-		@media screen and (max-width: 1100px) {
-			height: 196px;
-			width: 256px;
-		}
-	}
-
-	@media screen and (max-width: 1100px) {
-		width: 100%;
-		min-height: 130px;
-		overflow: visible;
 	}
 }

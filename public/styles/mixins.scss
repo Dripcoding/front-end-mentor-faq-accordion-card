@@ -16,9 +16,32 @@
 	align-items: center;
 }
 
+// image container one
+@mixin image-container-one {
+	display: block;
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+	left: -91px;
+	margin-top: -40px;
+}
+
+@mixin image-container-two {
+	width: 100%;
+	min-height: inherit;
+	position: relative;
+	width: 50%;
+	flex: 1.2;
+	overflow: hidden;
+}
+
 // faq container
 @mixin faq-card-container {
 	background-color: $cardBgColor;
+	background-image: url("../assets/images/bg-pattern-desktop.svg");
+	background-position: -575px -294px;
+	background-repeat: no-repeat;
+	position: relative;
 	border-radius: $cardBorderRadius;
 	box-sizing: border-box;
 	font-family: $cardFontFamily;
@@ -27,11 +50,27 @@
 	width: $cardWidth;
 }
 
-@mixin faq-container-column {
-	height: 100%;
+@mixin faq-card-container-header {
+	font-family: $cardFontFamily;
+	font-size: $cardHeaderFontSize;
+	font-weight: $cardHeaderFontWeight;
+	font-style: $cardHeaderFontStyle;
+	height: $cardHeaderHeight;
+	line-height: $cardHeaderLineHeight;
+	margin-bottom: $cardHeaderMarginBottom;
 }
 
-// Deskto active faq item
+@mixin faq-container-column {
+	height: 100%;
+	box-sizing: border-box;
+	padding-bottom: 83px;
+	padding-left: 87px;
+	padding-right: 95px;
+	padding-top: 65px;
+	width: 50%;
+}
+
+// Desktop active faq item
 @mixin desktop-active-item {
 	flex-direction: column !important;
 	height: fit-content !important;
@@ -48,6 +87,10 @@
 	line-height: $cardInactiveItemLineHeight;
 	height: $cardItemInactiveItemHeight;
 	width: $cardInactiveItemWidth;
+	align-items: center;
+	border-bottom: 1px solid #e8e8ea;
+	height: 52px;
+	justify-content: space-between;
 }
 
 // Desktop faq item header container
@@ -81,4 +124,11 @@
 	font-size: $cardActiveItemTextFontSize;
 	font-weight: $cardActiveItemTextFontWeight;
 	line-height: $cardActiveItemTextLineHeight;
+}
+
+@mixin chevron {
+	padding-bottom: 24px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 24px;
 }

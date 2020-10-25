@@ -1,20 +1,9 @@
 @use 'mixins' as *;
 @use 'palette' as *;
 
-@font-face {
-	font-family: "KumbhSans-Bold";
-	src: url("../assets/fonts/KumbhSans-Bold.ttf") format("ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
 
-@font-face {
-	font-family: "KumbhSans-Light";
-	src: url("../assets/fonts/KumbhSans-Light.ttf") format("ttf");
-}
-
-@font-face {
-	font-family: "KumbhSans-Regular";
-	src: url("../assets/fonts/KumbhSans-Regular.ttf") format("ttf");
-}
+$KumbhSans: "Kumbh Sans", sans-serif;
 
 body {
 	background-image: $gradient;
@@ -65,6 +54,8 @@ body {
 
 		h1 {
 			@include faq-card-container-header;
+			font-family: $KumbhSans;
+			font-weight: 700;
 
 			@media screen and (max-width: 1100px) {
 				align-self: center;
@@ -105,6 +96,7 @@ body {
 
 		.faqContainer__item__header {
 			@include desktop-inactive-item-header;
+			font-family: $KumbhSans;
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 14px;
@@ -139,7 +131,7 @@ body {
 
 		.faqContainer__item__answer {
 			display: none;
-			// font-family: "KumbhSans-Regular";
+			font-family: $KumbhSans;
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;

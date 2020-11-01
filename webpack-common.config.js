@@ -33,7 +33,9 @@ module.exports = {
             template: './public/index.html',
             scriptLoading: 'defer'
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin({
+            filename: "styles/[name].css"
+        })
     ],
     output: {
         filename: 'main.js',

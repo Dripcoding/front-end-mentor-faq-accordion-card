@@ -5,13 +5,20 @@
 
 $KumbhSans: "Kumbh Sans", sans-serif;
 
-body {
+html {
+	background-attachment: fixed;
 	background-image: $gradient;
+	height: 100vh;
+	padding-top: 10px;
+	padding-bottom: 70px;
+}
+
+body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 100%;
 }
 
 .cardContainer {
